@@ -44,6 +44,7 @@ class Bot:
 
     def send_recipient(self, recipient_id, payload, notification_type=NotificationType.regular):
         payload['recipient'] = {
+
             'id': recipient_id
         }
         payload['notification_type'] = notification_type.value
@@ -65,6 +66,7 @@ class Bot:
         Output:
             Response from API as <dict>
         """
+        print('its new')
         payload = {
             'recipient': {
                     'id': recipient_id
